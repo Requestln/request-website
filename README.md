@@ -26,6 +26,6 @@ The full documentation for the RequestIn app can be found in the [request-docume
   <img src="https://contrib.rocks/image?repo=Requestln/request-website" />
 </a>
 
-## License
+## Licensing
 
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
