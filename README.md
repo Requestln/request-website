@@ -19,3 +19,13 @@
 ## Development
 ## Documentation
 The full documentation for the RequestIn app can be found in the [request-documentation](https://github.com/Requestln/request-documentation) repository. The documentation repository contains technical documents, architecture information, and white papers related to this implementation.
+
+## Authors
+
+<a href="https://github.com/Requestln/request-website/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Requestln/request-website" />
+</a>
+
+## License
+
+This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
