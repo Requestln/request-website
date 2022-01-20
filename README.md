@@ -1,6 +1,5 @@
 <p align="center">
- <a href="https://www.coronawarn.app/en/"><img src="https://officelogistics.com.au/wp-content/uploads/2017/01/background-placeholder-3.jpg" width="1000"></a>
-</p>
+ <a href="https://ibb.co/QHM5sKt"><img src="https://i.ibb.co/hdVqpmw/CC-Express-20220120-1244130-5697171083539824.png" alt="CC-Express-20220120-1244130-5697171083539824" border="0"></a> 
 
 <hr />
 <p align="center">
