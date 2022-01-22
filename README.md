@@ -16,7 +16,7 @@
 ## About this repository
 ## Development
 ## Documentation
-The full documentation for the RequestIn app can be found in the [request-documentation](https://github.com/Requestln/request-documentation) repository. The documentation repository contains technical documents, architecture information, and white papers related to this implementation.
+The full documentation for the RequestIn app can be found in the [ri-documentation](https://github.com/Requestln/ri-documentation) repository. The documentation repository contains technical documents, architecture information, and white papers related to this implementation.
 
 ## Authors
 
