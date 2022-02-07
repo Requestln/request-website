@@ -31,7 +31,7 @@ npm run lint
 # See [Configuration Reference](https://cli.vuejs.org/config/).
 
 <p align="center">
- <a href="https://ibb.co/TrJtwh1"><img src="https://i.ibb.co/rvqHQy3/CC-Express-20220120-1244130-5697171083539824-ccexpress-2.png" alt="CC-Express-20220120-1244130-5697171083539824-ccexpress-2" border="0"></a> 
+ <a href="https://ibb.co/TrJtwh1"><img src="https://i.ibb.co/rvqHQy3/CC-Express-20220120-1244130-5697171083539824-ccexpress-2.png" alt="CC-Express-20220120-1244130-5697171083539824-ccexpress-2" border="0"></a>
 <hr />
 <p align="center">
     <a href="#about-this-repository">About this Repository</a> •
