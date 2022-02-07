@@ -1,3 +1,29 @@
+<<<<<<< HEAD
+# ri-website
+
+## Project setup
+```
+npm install
+```
+
+### Compiles and hot-reloads for development
+```
+npm run serve
+```
+
+### Compiles and minifies for production
+```
+npm run build
+```
+
+### Lints and fixes files
+```
+npm run lint
+```
+
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
 <p align="center">
  <a href="https://ibb.co/TrJtwh1"><img src="https://i.ibb.co/rvqHQy3/CC-Express-20220120-1244130-5697171083539824-ccexpress-2.png" alt="CC-Express-20220120-1244130-5697171083539824-ccexpress-2" border="0"></a> 
 <hr />
@@ -27,3 +53,4 @@ The full documentation for the RequestIn app can be found in the [ri-documentati
 ## Licensing
 
 This project is licensed under the Apache 2 License - see the [LICENSE](LICENSE) file for details.
+>>>>>>> b63cf0693968ed022f72ad5ddddad7aa034b3d9a
