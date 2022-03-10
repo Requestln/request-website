@@ -1,6 +1,6 @@
 # ri-website
 <p align="center">
- <a href="https://ibb.co/TrJtwh1"><img src="https://i.ibb.co/rvqHQy3/CC-Express-20220120-1244130-5697171083539824-ccexpress-2.png" alt="CC-Express-20220120-1244130-5697171083539824-ccexpress-2" border="0"></a> 
+ <a href="https://ibb.co/4g9x1g9"><img width="1920px"src="https://i.ibb.co/gFHC4FH/IMG-20220228-001437.png" alt="IMG-20220228-001437" border="0"></a> 
 <hr />
 <p align="center">
     <a href="#about-this-repository">About this Repository</a> •
