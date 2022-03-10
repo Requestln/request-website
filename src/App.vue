@@ -13,7 +13,7 @@
                justify-content-center
             "
          >
-            <h3 class="text-light">Home</h3>
+            <router-view></router-view>
          </div>
       </div>
    </div>
@@ -21,11 +21,10 @@
 
 <script>
    import Nav from "./components/Nav.vue";
-   import Home from "./components/Home.vue";
 
    export default {
       name: "App",
-      components: { Nav, Home },
+      components: { Nav },
    };
 </script>
 
@@ -36,9 +35,9 @@
    }
 
    body {
-      background: #da7a2d;
+      background: #6ee4c0;
       /*min-height: 100vh;
-                                                   display: flex;*/
+                                                            display: flex;*/
       font-weight: 400;
       font-family: "Fira Sans", sans-serif;
    }

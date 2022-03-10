@@ -1,5 +1,5 @@
 <template>
-   <h1>No gerh erh, eh,keherh</h1>
+   <h1>Home View</h1>
 </template>
 
 <script>

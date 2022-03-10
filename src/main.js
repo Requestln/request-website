@@ -1,11 +1,10 @@
 import Vue from "vue";
-import App from './App'
-
-import vuetify from '@/plugins/vuetify' // path to vuetify export
-
+import App from "./App";
+import router from "./router";
 
 //Vue.config.productionTip = false;
 
 new Vue({
-  render: (h) => h(App),vuetify
+  render: (h) => h(App),
+  router,
 }).$mount("#app");
