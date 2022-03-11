@@ -1,5 +1,7 @@
 <template>
-   <h1>Home View</h1>
+   <div class="d-flex text-light">
+      <h1>Home View</h1>
+   </div>
 </template>
 
 <script>

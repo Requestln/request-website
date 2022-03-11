@@ -13,7 +13,7 @@
                justify-content-center
             "
          >
-            <router-view class="text-light"></router-view>
+            <router-view></router-view>
          </div>
       </div>
    </div>
