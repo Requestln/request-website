@@ -13,7 +13,7 @@
                justify-content-center
             "
          >
-            <router-view></router-view>
+            <router-view class="text-light"></router-view>
          </div>
       </div>
    </div>
@@ -39,7 +39,7 @@
       /*min-height: 100vh;
                                                             display: flex;*/
       font-weight: 400;
-      font-family: "Fira Sans", sans-serif;
+  font-family: Roboto, Helvetica, Arial, sans-serif;
    }
 
    h1,
