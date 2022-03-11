@@ -37,9 +37,9 @@
    body {
       background: #6ee4c0;
       /*min-height: 100vh;
-                                                            display: flex;*/
+                                                                  display: flex;*/
       font-weight: 400;
-  font-family: Roboto, Helvetica, Arial, sans-serif;
+      font-family: Roboto, Helvetica, Arial, sans-serif;
    }
 
    h1,
