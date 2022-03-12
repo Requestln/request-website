@@ -1,40 +1,41 @@
 <template>
-   <MDBCard class="card">
-      <MDBCardBody>
-         <MDBCardTitle>Request.tn Login</MDBCardTitle>
-         <div class="d-flex flex-column gap-3 mb-3 mt-3 w-100">
-            <MDBInput class="w-100" label="email" />
-            <MDBInput class="w-100" type="password" label="password">
-               <MDBIcon icon="fa-solid fa-eye" class="trailing"></MDBIcon>
-            </MDBInput>
-         </div>
+   <div class="card">
+      <div class="card-body">
+         <h5 class="card-title text-center">Login</h5>
+         <form>
+            <div class="mb-3">
+               <label for="exampleInputEmail1" class="form-label"
+                  >Email address</label
+               >
+               <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="name@example.com"
+               />
+            </div>
+            <div class="mb-4">
+               <label for="exampleInputPassword1" class="form-label"
+                  >Password</label
+               >
+               <input
+                  type="password"
+                  class="form-control"
+                  id="exampleInputPassword1"
+                  placeholder="**********"
+               />
+            </div>
 
-         <MDBBtn color="primary">Login</MDBBtn>
-      </MDBCardBody>
-   </MDBCard>
+            <button type="submit" class="btn btn-primary">Login</button>
+         </form>
+      </div>
+   </div>
 </template>
 
 <script>
-   import {
-      MDBCard,
-      MDBCardBody,
-      MDBCardTitle,
-      MDBCardText,
-      MDBBtn,
-      MDBInput,
-      MDBIcon,
-   } from "mdb-vue-ui-kit";
    export default {
       name: "Login",
-      components: {
-         MDBCard,
-         MDBCardBody,
-         MDBCardTitle,
-         MDBCardText,
-         MDBBtn,
-         MDBInput,
-         MDBIcon,
-      },
    };
 </script>
 

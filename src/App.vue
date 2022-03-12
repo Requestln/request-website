@@ -1,7 +1,7 @@
 <template>
    <div id="app">
       <div class="d-flex flex-column h-100">
-         <div class="d-flex mydiv2 align-items-center justify-content-center">
+         <div class="d-flex align-items-center justify-content-center">
             <Nav />
          </div>
          <div
@@ -35,11 +35,10 @@
    }
 
    body {
-      background: #6ee4c0;
       /*min-height: 100vh;
-                                                                  display: flex;*/
-      font-weight: 400;
-      font-family: Roboto, Helvetica, Arial, sans-serif;
+                                                                              display: flex;*/
+      /*   font-weight: 400;
+         font-family: Roboto, Helvetica, Arial, sans-serif; */
    }
 
    h1,
@@ -48,7 +47,6 @@
    h4,
    h5,
    h6,
-   label,
    span {
       font-weight: 500;
       font-family: "Fira Sans", sans-serif;
@@ -65,13 +63,15 @@
       width: 100%;
    }
 
-   .navbar-light {
+   .navbar {
       background-color: rgb(255, 255, 255);
-      box-shadow: 0, 14px, 80px, rgba(100, 104, 175, 0.2);
+      -webkit-box-shadow: 0 8px 6px -6px #999;
+      -moz-box-shadow: 0 8px 6px -6px #999;
+      box-shadow: 0 8px 10px 0px rgba(153, 153, 153, 0.096);
    }
 
    .mydiv {
-      background-color: rgb(47, 118, 248);
+      background-color: #f6f7f8;
    }
    .mydiv2 {
       background-color: rgb(95, 209, 171);

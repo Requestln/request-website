@@ -1,5 +1,5 @@
 <template>
-   <div class="d-flex text-light">
+   <div class="d-flex text-dark">
       <h1>Home View</h1>
    </div>
 </template>
