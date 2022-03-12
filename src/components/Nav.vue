@@ -1,27 +1,24 @@
 <template>
    <nav
-      class="navbar navbar-expand navbar-light fixed-top"
-      style="height: 65px"
+      class="navbar navbar-expand fixed-top navbar-light bg-light ps-5 pe-5"
    >
       <div class="container-fluid">
-         <a class="navbar-brand ms-2" href="/">
+         <a class="navbar-brand" href="/">
             <img
                class="crop-circle"
-               src="../assets/ak.png"
+               src="../assets/ak.svg"
                alt=""
                loading="lazy"
             />
          </a>
-         <div id="auth" class="collapse navbar-collapse me-2">
-            <ul class="navbar-nav ml-auto">
-               <li class="nav-item">
-                  <a href="/login" class="nav-link">Login</a>
-               </li>
-               <li class="nav-item">
-                  <a href="/signup" class="nav-link">Sign up</a>
-               </li>
-            </ul>
-         </div>
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a href="/login" class="nav-link">Login</a>
+            </li>
+            <li class="nav-item">
+               <a href="/signup" class="nav-link">Sign up</a>
+            </li>
+         </ul>
       </div>
    </nav>
 </template>
@@ -33,17 +30,13 @@
 </script>
 
 <style>
-   #auth {
-      display: flex;
-      justify-content: flex-end;
-   }
-
    .crop-circle {
-      width: 50px;
-      height: 50px;
+      width: 45px;
+      height: 45px;
       position: relative;
       overflow: hidden;
       border-radius: 20%;
       filter: drop-shadow(5px 5px 6px #1876f248);
+      background-color: #fff;
    }
 </style>

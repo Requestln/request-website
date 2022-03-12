@@ -2,7 +2,7 @@
    <div class="card">
       <div class="card-body">
          <h5 class="card-title text-center">Login</h5>
-         <form>
+         <form @submit.prevent="onSubmit">
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label"
                   >Email address</label
@@ -13,6 +13,7 @@
                   id="exampleInputEmail1"
                   aria-describedby="emailHelp"
                   placeholder="name@example.com"
+                  v-model="email"
                />
             </div>
             <div class="mb-4">
@@ -24,6 +25,7 @@
                   class="form-control"
                   id="exampleInputPassword1"
                   placeholder="**********"
+                  v-model="password"
                />
             </div>
 
@@ -34,8 +36,22 @@
 </template>
 
 <script>
+   import { store } from "../store/Store.js";
+
    export default {
       name: "Login",
+      data() {
+         return {
+            email: "",
+            password: "",
+         };
+      },
+      methods: {
+         async onSubmit(e) {
+            //Input verification
+            await store.doLogin(this.email, this.password);
+         },
+      },
    };
 </script>
 

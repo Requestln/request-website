@@ -34,13 +34,6 @@
       box-sizing: border-box;
    }
 
-   body {
-      /*min-height: 100vh;
-                                                                              display: flex;*/
-      /*   font-weight: 400;
-         font-family: Roboto, Helvetica, Arial, sans-serif; */
-   }
-
    h1,
    h2,
    h3,
@@ -68,6 +61,10 @@
       -webkit-box-shadow: 0 8px 6px -6px #999;
       -moz-box-shadow: 0 8px 6px -6px #999;
       box-shadow: 0 8px 10px 0px rgba(153, 153, 153, 0.096);
+
+      font-weight: 400;
+      font-family: "Fira Sans", sans-serif;
+      height: 60px;
    }
 
    .mydiv {
