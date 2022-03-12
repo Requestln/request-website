@@ -10,16 +10,18 @@ export const store = {
     email: "",
   }),
 
-  doLogin(em, password) {
+  doLogin(email, password) {
     axios
       .post("login", {
-        email: em,
+        email: email,
       })
       .then((response) => {
         console.log(response);
       })
       .catch((e) => {
         this.userState.isLoggedIn = true;
+        localStorage.setItem("user", JSON.stringify(this.userState));
+
         router.push("/");
         if (e.response) {
           const res = e.response;
@@ -30,6 +32,6 @@ export const store = {
           }
         }
       });
-    console.log(`${em}, ${password}`);
+    console.log(`${email}, ${password}`);
   },
 };

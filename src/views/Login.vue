@@ -1,8 +1,8 @@
 <template>
    <div class="card">
-      <div class="card-body">
-         <h5 class="card-title text-center">Login</h5>
-         <form @submit.prevent="onSubmit">
+      <div class="card-body w-100" >
+         <h4 class="card-title text-center mb-3">Login</h4>
+         <form @submit.prevent="onSubmit" class="w-100">
             <div class="mb-3">
                <label for="exampleInputEmail1" class="form-label"
                   >Email address</label
@@ -29,7 +29,7 @@
                />
             </div>
 
-            <button type="submit" class="btn btn-primary">Login</button>
+            <button type="submit" class="btn btn-primary w-100">Login</button>
          </form>
       </div>
    </div>
@@ -58,6 +58,7 @@
 <style>
    .card {
       width: 25%;
-      min-width: 250px;
+      min-width: 320px;
+      max-width: 500px;
    }
 </style>

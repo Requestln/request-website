@@ -21,10 +21,18 @@
 
 <script>
    import Nav from "./components/Nav.vue";
+   import { store } from "./store/Store.js";
 
    export default {
       name: "App",
       components: { Nav },
+      created() {
+         const localUserState = JSON.parse(localStorage.getItem("user"));
+         if (localUserState) {
+            console.log(JSON.stringify(localUserState));
+            store.userState = localUserState
+         }
+      },
    };
 </script>
 
@@ -40,6 +48,7 @@
    h4,
    h5,
    h6,
+   label,
    span {
       font-weight: 500;
       font-family: "Fira Sans", sans-serif;
