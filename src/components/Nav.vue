@@ -11,7 +11,12 @@
          </router-link>
          <ul v-if="userState.isLoggedIn" id="nav-right" class="navbar-nav">
             <li class="nav-item">
-               <router-link class="text-danger nav-link" to="/logout" >Logout</router-link>
+               <router-link
+                  @click="onLogout"
+                  class="text-danger nav-link"
+                  to="/"
+                  >Logout</router-link
+               >
             </li>
          </ul>
          <ul v-else class="navbar-nav">
@@ -36,6 +41,11 @@
             isNotLoggedIn: !store.userState.isLoggedIn,
          };
       },
+      methods: {
+         onLogout(e) {
+            this.userState.isLoggedIn = false;
+         },
+      },
    };
 </script>
 
@@ -51,6 +61,5 @@
    }
 
    .logout {
-
    }
 </style>

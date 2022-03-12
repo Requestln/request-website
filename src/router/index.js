@@ -19,6 +19,11 @@ const routes = [
     name: "SignUp",
     component: SignUp,
   },
+  {
+    path: "/logout",
+    name: "Logout",
+    component: Home,
+  },
 ];
 
 const router = VueRouter.createRouter({
