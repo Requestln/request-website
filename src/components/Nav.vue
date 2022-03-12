@@ -9,7 +9,11 @@
                loading="lazy"
             />
          </router-link>
-         <ul v-if="userState.isLoggedIn" id="nav-right" class="navbar-nav">
+         <ul
+            v-if="state.userState.isLoggedIn"
+            id="nav-right"
+            class="navbar-nav"
+         >
             <li class="nav-item">
                <router-link
                   @click="onLogout"
@@ -19,12 +23,12 @@
                >
             </li>
          </ul>
-         <ul v-else class="navbar-nav">
+         <ul class="navbar-nav" v-else>
             <li class="nav-item">
                <router-link to="/login" class="nav-link">Login</router-link>
             </li>
             <li class="nav-item">
-               <a href="/signup" class="nav-link">Sign up</a>
+               <router-link to="/signup" class="nav-link">Sign up</router-link>
             </li>
          </ul>
       </div>
@@ -33,17 +37,23 @@
 
 <script>
    import { store } from "../store/Store.js";
+   import { ref } from "vue";
+
    export default {
       name: "Nav",
       data() {
          return {
-            userState: store.userState,
-            isNotLoggedIn: !store.userState.isLoggedIn,
+            state: store,
          };
       },
       methods: {
-         onLogout(e) {
-            this.userState.isLoggedIn = false;
+         onLogout() {
+            console.log(store.userState);
+            console.log(this.state.userState);
+            store.userState.isLoggedIn = false;
+            //store.onUserStateUpdated();
+            console.log(store.userState);
+            console.log(this.state.userState);
          },
       },
    };

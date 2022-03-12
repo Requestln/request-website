@@ -26,12 +26,19 @@
    export default {
       name: "App",
       components: { Nav },
-      created() {
-         const localUserState = JSON.parse(localStorage.getItem("user"));
-         if (localUserState) {
-            console.log(JSON.stringify(localUserState));
-            store.userState = localUserState
-         }
+      data() {
+         return {
+            userState: store.userState,
+         };
+      },
+      watch: {
+         userState: {
+            handler(old, _new) {
+               console.log("Helelle");
+               localStorage.setItem("user", JSON.stringify(_new));
+            },
+            deep: true,
+         },
       },
    };
 </script>

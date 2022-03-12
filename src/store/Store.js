@@ -1,15 +1,22 @@
-import { reactive } from "vue";
+import { reactive, watch } from "vue";
 import axios from "axios";
 import router from "../router";
 console.log("abcd");
-export const store = {
-  userState: reactive({
-    isLoggedIn: false,
-    firstname: "",
-    lastname: "",
-    email: "",
-  }),
 
+if (!localStorage.getItem("user")) {
+  localStorage.setItem(
+    "user",
+    JSON.stringify({
+      isLoggedIn: false,
+      firstname: "",
+      lastname: "",
+      email: "",
+    })
+  );
+}
+
+const store = {
+  userState: reactive(JSON.parse(localStorage.getItem("user"))),
   doLogin(email, password) {
     axios
       .post("login", {
@@ -20,8 +27,6 @@ export const store = {
       })
       .catch((e) => {
         this.userState.isLoggedIn = true;
-        localStorage.setItem("user", JSON.stringify(this.userState));
-
         router.push("/");
         if (e.response) {
           const res = e.response;
@@ -35,3 +40,5 @@ export const store = {
     console.log(`${email}, ${password}`);
   },
 };
+
+export { store };
