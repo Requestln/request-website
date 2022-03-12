@@ -1,7 +1,7 @@
 import { reactive } from "vue";
 import axios from "axios";
-import router from "../router"
-console.log("abcd")
+import router from "../router";
+console.log("abcd");
 export const store = {
   userState: reactive({
     isLoggedIn: false,
@@ -12,7 +12,7 @@ export const store = {
 
   doLogin(em, password) {
     axios
-      .post("http://localhost:9555/api/v1/login", {
+      .post("login", {
         email: em,
       })
       .then((response) => {
@@ -20,7 +20,7 @@ export const store = {
       })
       .catch((e) => {
         this.userState.isLoggedIn = true;
-        router.push("/")
+        router.push("/");
         if (e.response) {
           const res = e.response;
           if (res.status == 400) {
