@@ -1,19 +1,22 @@
 <template>
-   <nav
-      class="navbar navbar-expand fixed-top navbar-light bg-light ps-5 pe-5"
-   >
+   <nav class="navbar navbar-expand fixed-top navbar-light bg-light ps-5 pe-5">
       <div class="container-fluid">
-         <a class="navbar-brand" href="/">
+         <router-link class="navbar-brand" to="/">
             <img
                class="crop-circle"
                src="../assets/ak.svg"
                alt=""
                loading="lazy"
             />
-         </a>
-         <ul class="navbar-nav">
+         </router-link>
+         <ul v-if="userState.isLoggedIn" id="nav-right" class="navbar-nav">
             <li class="nav-item">
-               <a href="/login" class="nav-link">Login</a>
+               <router-link class="text-danger nav-link" to="/logout" >Logout</router-link>
+            </li>
+         </ul>
+         <ul v-else class="navbar-nav">
+            <li class="nav-item">
+               <router-link to="/login" class="nav-link">Login</router-link>
             </li>
             <li class="nav-item">
                <a href="/signup" class="nav-link">Sign up</a>
@@ -24,8 +27,15 @@
 </template>
 
 <script>
+   import { store } from "../store/Store.js";
    export default {
       name: "Nav",
+      data() {
+         return {
+            userState: store.userState,
+            isNotLoggedIn: !store.userState.isLoggedIn,
+         };
+      },
    };
 </script>
 
@@ -38,5 +48,9 @@
       border-radius: 20%;
       filter: drop-shadow(5px 5px 6px #1876f248);
       background-color: #fff;
+   }
+
+   .logout {
+
    }
 </style>

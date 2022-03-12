@@ -47,9 +47,9 @@
          };
       },
       methods: {
-         async onSubmit(e) {
+         onSubmit(e) {
             //Input verification
-            await store.doLogin(this.email, this.password);
+            store.doLogin(this.email, this.password);
          },
       },
    };
