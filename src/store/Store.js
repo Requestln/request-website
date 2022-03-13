@@ -39,6 +39,19 @@ const store = {
       });
     console.log(`${email}, ${password}`);
   },
+
+  doSignUp(signUpPayload) {
+    axios
+      .post("register", {
+        firstname: signUpPayload.firstname,
+        lastname: signUpPayload.lastname,
+        email: signUpPayload.email,
+      })
+      .then((response) => {
+        console.log(response);
+      })
+      .then((error) => {});
+  },
 };
 
 export { store };
