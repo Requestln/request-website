@@ -24,6 +24,7 @@ const routes = [
     path: "/logout",
     name: "Logout",
     component: Home,
+    redirect: '/',
   },
   {
     path: "/confirm",

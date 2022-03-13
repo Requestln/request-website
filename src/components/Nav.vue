@@ -18,7 +18,7 @@
                <router-link
                   @click="onLogout"
                   class="text-danger nav-link"
-                  to="/"
+                  to="/logout"
                   >Logout</router-link
                >
             </li>
