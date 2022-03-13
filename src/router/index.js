@@ -2,6 +2,7 @@ import * as VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import SignUp from "../views/SignUp.vue";
+import CheckYourEmail from "../views/CheckYourEmail.vue"
 
 const routes = [
   {
@@ -24,6 +25,12 @@ const routes = [
     name: "Logout",
     component: Home,
   },
+  {
+    path: "/confirm",
+    name: "CheckYourEmail",
+    component: CheckYourEmail,
+    props: true,
+  }
 ];
 
 const router = VueRouter.createRouter({

@@ -13,7 +13,7 @@
                justify-content-center
             "
          >
-            <router-view></router-view>
+            <router-view />
          </div>
       </div>
    </div>
@@ -21,11 +21,13 @@
 
 <script>
    import Nav from "./components/Nav.vue";
+   import CheckYourEmail from "./views/CheckYourEmail.vue"
+
    import { store } from "./store/Store.js";
 
    export default {
       name: "App",
-      components: { Nav },
+      components: { Nav, CheckYourEmail },
       data() {
          return {
             userState: store.userState,

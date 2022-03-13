@@ -48,6 +48,12 @@ const store = {
         email: signUpPayload.email,
       })
       .then((response) => {
+        router.push({
+          name: "CheckYourEmail",
+          params: {
+            email: response.data.email,
+          },
+        });
         console.log(response);
       })
       .then((error) => {});
