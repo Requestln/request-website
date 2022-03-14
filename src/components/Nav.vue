@@ -63,7 +63,4 @@
       filter: drop-shadow(5px 5px 6px #1876f248);
       background-color: #fff;
    }
-
-   .logout {
-   }
 </style>

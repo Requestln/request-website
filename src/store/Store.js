@@ -57,6 +57,17 @@ const store = {
       })
       .then((error) => {});
   },
+  async doClaimAccount(token) {
+    var isSuccess = true;
+    const res = await axios
+      .get("confirmRegistration", {
+        params: { token: token },
+      })
+      .catch((e) => {
+        isSuccess = false;
+      });
+    return isSuccess;
+  },
 };
 
 export { store };
