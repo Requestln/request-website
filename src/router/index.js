@@ -2,7 +2,8 @@ import * as VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Login from "../views/Login.vue";
 import SignUp from "../views/SignUp.vue";
-import CheckYourEmail from "../views/CheckYourEmail.vue"
+import CheckYourEmail from "../views/CheckYourEmail.vue";
+import ClaimAccount from "../views/ClaimAccount.vue";
 
 const routes = [
   {
@@ -24,14 +25,19 @@ const routes = [
     path: "/logout",
     name: "Logout",
     component: Home,
-    redirect: '/',
+    redirect: "/",
   },
   {
     path: "/confirm",
     name: "CheckYourEmail",
     component: CheckYourEmail,
     props: true,
-  }
+  },
+  {
+    path: "/account/claim",
+    name: "ClaimAccount",
+    component: ClaimAccount,
+  },
 ];
 
 const router = VueRouter.createRouter({
