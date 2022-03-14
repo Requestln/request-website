@@ -1,7 +1,6 @@
 import { reactive, watch } from "vue";
 import axios from "axios";
 import router from "../router";
-console.log("abcd");
 
 if (!localStorage.getItem("user")) {
   localStorage.setItem(

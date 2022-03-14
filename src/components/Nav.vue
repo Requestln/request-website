@@ -10,7 +10,7 @@
             />
          </router-link>
          <ul
-            v-if="state.userState.isLoggedIn"
+            v-if="userState.isLoggedIn"
             id="nav-right"
             class="navbar-nav"
          >
@@ -37,23 +37,17 @@
 
 <script>
    import { store } from "../store/Store.js";
-   import { ref } from "vue";
 
    export default {
       name: "Nav",
       data() {
          return {
-            state: store,
+            userState: store.userState,
          };
       },
       methods: {
          onLogout() {
-            console.log(store.userState);
-            console.log(this.state.userState);
-            store.userState.isLoggedIn = false;
-            //store.onUserStateUpdated();
-            console.log(store.userState);
-            console.log(this.state.userState);
+            this.userState.isLoggedIn = false;
          },
       },
    };

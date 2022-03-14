@@ -36,7 +36,7 @@
       watch: {
          userState: {
             handler(old, _new) {
-               console.log("Helelle");
+               console.log("Watching userState: some property changed.")
                localStorage.setItem("user", JSON.stringify(_new));
             },
             deep: true,
