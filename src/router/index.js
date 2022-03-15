@@ -4,6 +4,7 @@ import Login from "../views/Login.vue";
 import SignUp from "../views/SignUp.vue";
 import CheckYourEmail from "../views/CheckYourEmail.vue";
 import ClaimAccount from "../views/ClaimAccount.vue";
+import Profile from "../views/Profile.vue"
 
 const routes = [
   {
@@ -38,6 +39,11 @@ const routes = [
     name: "ClaimAccount",
     component: ClaimAccount,
   },
+  {
+    path: "/users/:id?",
+    component: Profile,
+    name: 'Users'
+  }
 ];
 
 const router = VueRouter.createRouter({

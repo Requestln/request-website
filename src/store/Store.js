@@ -7,9 +7,7 @@ if (!localStorage.getItem("user")) {
     "user",
     JSON.stringify({
       isLoggedIn: false,
-      firstname: "",
-      lastname: "",
-      email: "",
+      id: ""
     })
   );
 }
@@ -23,20 +21,20 @@ const store = {
       })
       .then((response) => {
         this.userState.isLoggedIn = true;
+        this.userState.id = response.data.id;
         router.push("/");
-        console.log(response);
+        console.log(`New user logged in: ${JSON.stringifyr(esponse.data)}`);
       })
       .catch((e) => {
         if (e.response) {
           const res = e.response;
           if (res.status == 400) {
-            console.error("Invalid request, verify your input");
+            console.error("Invalid request");
           } else if (res.status == 404) {
-            console.error("User is not registered");
+            console.error(`email ${email} doesn't corespond to any account`);
           }
         }
       });
-    console.log(`${email}, ${password}`);
   },
 
   doSignUp(signUpPayload) {

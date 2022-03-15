@@ -9,11 +9,18 @@
                loading="lazy"
             />
          </router-link>
-         <ul
-            v-if="userState.isLoggedIn"
-            id="nav-right"
-            class="navbar-nav"
-         >
+         <ul v-if="userState.isLoggedIn" id="nav-right" class="navbar-nav">
+            <li class="nav-item me-1">
+               <router-link
+                  :to="{
+                     name: 'Users',
+                     params: { id: `${this.userState.id}` },
+                  }"
+                  class="nav-link text-primary"
+               >
+                  Profile
+               </router-link>
+            </li>
             <li class="nav-item">
                <router-link
                   @click="onLogout"
@@ -48,6 +55,9 @@
       methods: {
          onLogout() {
             this.userState.isLoggedIn = false;
+         },
+         getCurrentUserId() {
+            return this.userState.id;
          },
       },
    };
