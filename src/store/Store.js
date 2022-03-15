@@ -22,11 +22,11 @@ const store = {
         email: email,
       })
       .then((response) => {
+        this.userState.isLoggedIn = true;
+        router.push("/");
         console.log(response);
       })
       .catch((e) => {
-        this.userState.isLoggedIn = true;
-        router.push("/");
         if (e.response) {
           const res = e.response;
           if (res.status == 400) {
