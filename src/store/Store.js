@@ -23,7 +23,7 @@ const store = {
         this.userState.isLoggedIn = true;
         this.userState.id = response.data.id;
         router.push("/");
-        console.log(`New user logged in: ${JSON.stringifyr(esponse.data)}`);
+        console.log(`New user logged in: ${JSON.stringifyr(response.data)}`);
       })
       .catch((e) => {
         if (e.response) {
@@ -31,7 +31,7 @@ const store = {
           if (res.status == 400) {
             console.error("Invalid request");
           } else if (res.status == 404) {
-            console.error(`email ${email} doesn't corespond to any account`);
+            console.error(`email ${email} doesn't belong to any account`);
           }
         }
       });
