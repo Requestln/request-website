@@ -1,6 +1,6 @@
 <template>
-   <nav class="navbar navbar-expand fixed-top navbar-light bg-light ps-5 pe-5">
-      <div class="container-fluid">
+   <nav class="navbar navbar-expand fixed-top navbar-light bg-light">
+      <div class="container-xl px-3">
          <router-link class="navbar-brand" to="/">
             <img
                class="crop-circle"
