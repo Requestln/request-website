@@ -12,7 +12,7 @@
 </p>
 <hr />
 
-# RequestIn: Website
+# Request.tn: Website
 ## About this repository
 ## Development
 ## Project setup
@@ -40,7 +40,7 @@ npm run lint
 See [Configuration Reference](https://cli.vuejs.org/config/).
 ___
 ## Documentation
-The full documentation for the RequestIn app can be found in the [ri-documentation](https://github.com/Requestln/ri-documentation) repository. The documentation repository contains technical documents, architecture information, and white papers related to this implementation.
+The full documentation for the RequestIn app can be found in the [ri-documentation](https://github.com/requesttn/ri-documentation) repository. The documentation repository contains technical documents, architecture information, and white papers related to this implementation.
 
 ## Authors
 
